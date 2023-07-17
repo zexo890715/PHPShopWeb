@@ -1,4 +1,3 @@
-學號:40743149<br>
 <!DOCTYPE html>
 <html lang="utf-8">
 <head>
@@ -28,9 +27,10 @@
     	<th>合計</th>
  		<?php
         if(isset($_SESSION['Array'])){
-            foreach($_SESSION['Array'] as &$v){
-                $sql="SELECT 書名,定價 FROM 資料庫書籍資料 WHERE ISBN=".$v[0];
-                $result=$conn->query($sql);
+            foreach($_SESSION['Array']as&$v){
+                $sql = "SELECT 書名,定價 FROM 資料庫書籍資料 WHERE ISBN=".$v[0];
+				echo $sql;
+                $result = $conn->query($sql);
                 if($row=$result->fetch_assoc()){
                     echo "<tr>
                     <td>".$row["書名"]."</td>

@@ -7,14 +7,14 @@
     require "ConnectDB.php";
     #$_SESSION['user_name'];
     #$_SESSION['會員ID'];
-    $U=$_POST['帳號'];
-    $P=$_POST['密碼'];
+    $U = $_POST['帳號'];
+    $P = $_POST['密碼'];
     #echo "帳號 : ".$U."</br>";
     #echo "密碼 : ".$P."</br>";
-	$sql="";
-	$sql="SELECT * FROM 書籍會員清單 where 帳號 = '$U' AND 密碼 = '$P'";
+	$sql = "";
+	$sql = "SELECT * FROM 書籍會員清單 where 帳號 = '$U' AND 密碼 = '$P'";
     echo $sql;
-	$result=$conn->query($sql);
+	$result = $conn->query($sql);
 	if ($result != false && $result->num_rows > 0) {
         while($row = $result->fetch_assoc()){
             $_SESSION['user_name'] = $row["會員名稱"];

@@ -1,10 +1,10 @@
 <?php
-    $server="192.168.0.184";
-    $username="PHPShopWeb";
-    $password="5D7a2v5i8D@5";
-    $dbname="PHPShopWeb";
+    $server = "192.168.0.184";
+    $username = "PHPShopWeb";
+    $password = "5D7a2v5i8D@5";
+    $dbname = "PHPShopWeb";
 
-    $conn=new mysqli($server,$username,$password,$dbname);
+    $conn = new mysqli($server,$username,$password,$dbname);
 
     mysqli_query($conn,"SET NAMES 'UTF8'");
 
