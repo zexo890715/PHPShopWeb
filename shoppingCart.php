@@ -1,4 +1,3 @@
-學號:40743149<br>
 <!DOCTYPE html>
 <html lang="utf-8">
 <head>
@@ -16,7 +15,7 @@
     $sum=0;
 	require "ConnectDB.php";
     if(isset($_SESSION['Array']))
-    print_r ($_SESSION['Array']);
+    #print_r ($_SESSION['Array']);
 	?>
 	<div class="container">
 		<a href="index.php">首頁</a><br>

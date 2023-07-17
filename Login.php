@@ -5,12 +5,8 @@
 <?php
     session_start();
     require "ConnectDB.php";
-    #$_SESSION['user_name'];
-    #$_SESSION['會員ID'];
     $U=$_POST['帳號'];
     $P=$_POST['密碼'];
-    #echo "帳號 : ".$U."</br>";
-    #echo "密碼 : ".$P."</br>";
 	$sql="";
 	$sql="SELECT * FROM 書籍會員清單 where 帳號 = '$U' AND 密碼 = '$P'";
     echo $sql;

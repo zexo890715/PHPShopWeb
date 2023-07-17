@@ -1,4 +1,3 @@
-學號:40743149<br>
 <!DOCTYPE html>
 <html lang="utf-8">
 <head>

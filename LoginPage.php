@@ -1,4 +1,3 @@
-學號:40743149<br>
 <!DOCTYPE html>
 <html lang="utf-8">
     <form action="Login.php" method="POST">
@@ -10,7 +9,7 @@
     </br>
     <input type="password" id="密碼" name="密碼"/>
     </br>
- </br>
- <input type="submit" value="登入">
+    </br>
+    <input type="submit" value="登入">
     </form>
 </html>
