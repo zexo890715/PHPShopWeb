@@ -10,7 +10,7 @@
 	$sql="";
 	$sql="SELECT * FROM 書籍會員清單 where 帳號 = '$U' AND 密碼 = '$P'";
     echo $sql;
-	$result=$conn->query($sql);
+	$result = $conn->query($sql);
 	if ($result != false && $result->num_rows > 0) {
         while($row = $result->fetch_assoc()){
             $_SESSION['user_name'] = $row["會員名稱"];

@@ -21,5 +21,5 @@
     print_r ($_SESSION['Array']);
     #unset($_SESSION['Array']);
 	$conn->close();
-    header('Location: shoppingCart.php');
+    #header('Location: shoppingCart.php');
 ?>
