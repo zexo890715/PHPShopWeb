@@ -26,7 +26,7 @@ if (isset($_SESSION['user_name'])) {
             //設定API的Header
             $headers = array(
                 'Content-Type: multipart/form-data',
-                'Authorization: Bearer C6X0ETd0qeakCGvc5RsRVZc4z57VuGPLxlXy4bpRRIk'
+                'Authorization: Bearer LINENOTIFYAPI'
             );
 
             // 使用 cURL 來發送 POST 請求

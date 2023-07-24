@@ -1,7 +1,7 @@
 <?php
     $headers = array(
         'Content-Type: multipart/form-data',
-        'Authorization: Bearer C6X0ETd0qeakCGvc5RsRVZc4z57VuGPLxlXy4bpRRIk'
+    'Authorization: Bearer LINENOTIFYAPI'
     );
     $message = array(
         'message' => 'Hello'
